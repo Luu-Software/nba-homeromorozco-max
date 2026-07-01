@@ -5,18 +5,44 @@ const ids: number[] = cargarJugadores();
 let roster: number[] = [];
 
 export function estaEnRoster(roster: number[], id: number): boolean {
-  let esta: boolean = false; // COMPLETAR
+  let esta: boolean = false; 
+  let longitud: number= roster.length
+  let contador: number = 0
+  let n: number=0
+  while(contador<longitud){
+    if(id === roster[n]){
+      esta=true
+    }
+    n++
+    contador++
+  }
   return esta;
+
 }
 
 export function agregarAlRoster(roster: number[], id: number): number[] {
-  let nuevoRoster: number[] = []; // COMPLETAR
+  let nuevoRoster: number[] = []; 
+  let longitud: number= roster.length
+  let n: number=0
+let contador=0
+if(contador<longitud)
+  { nuevoRoster.push(roster [n])
+    n++
+    contador++
+  }
+  nuevoRoster.push(id)
+
+  
+
   return nuevoRoster;
 }
 
 export function quitarDelRoster(roster: number[], id: number): number[] {
-  let nuevoRoster: number[] = []; // COMPLETAR
+  let nuevoRoster: number[] = []; 
+  
+  
   return nuevoRoster;
+
 }
 
 cuandoPasa('filtrar', () => {
