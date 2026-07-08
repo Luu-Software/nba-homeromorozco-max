@@ -25,7 +25,7 @@ export function agregarAlRoster(roster: number[], id: number): number[] {
   let longitud: number= roster.length
   let n: number=0
 let contador=0
-if(contador<longitud)
+while(contador<longitud)
   { nuevoRoster.push(roster [n])
     n++
     contador++
@@ -39,8 +39,16 @@ if(contador<longitud)
 
 export function quitarDelRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; 
-  
-  
+  let longitud: number= roster.length
+  let n: number=0
+let contador=0
+while(contador<longitud)
+  { 
+    if(id!==roster[n]){
+    nuevoRoster.push(roster [n])
+    }
+    n++
+    contador++}
   return nuevoRoster;
 
 }
