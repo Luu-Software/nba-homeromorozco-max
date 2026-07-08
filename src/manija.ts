@@ -5,7 +5,19 @@ const ids: number[] = cargarJugadores();
 let roster: number[] = [];
 
 export function filtrarPorPosicion(jugadores: number[], posicion: string): number[] {
-  let idsFiltrados: number[] = []; // COMPLETAR
+  let idsFiltrados: number[] = []; 
+  let longitud: number= roster.length
+  let contador: number = 0
+  let n: number=0
+while(contador<longitud)
+  
+
+
+
+  n++
+  contador++
+
+
   return idsFiltrados;
 }
 
