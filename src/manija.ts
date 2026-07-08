@@ -4,16 +4,18 @@ import { cargarJugadores, obtenerDato, obtenerJugadoresPorIds } from './lib/juga
 const ids: number[] = cargarJugadores();
 let roster: number[] = [];
 
-export function filtrarPorPosicion(jugadores: number[], posicion: string): number[] {
+export function filtrarPorPosicion(jugadores: number[], letra: string): number[] {
   let idsFiltrados: number[] = []; 
   let longitud: number= roster.length
   let contador: number = 0
   let n: number=0
+
 while(contador<longitud)
-  
 
-
-
+if (letra===obtenerDato(jugadores[n], 'posicion') ){
+  idsFiltrados.push(roster [n])
+}
+else{idsFiltrados.push(roster[n])}
   n++
   contador++
 
@@ -22,7 +24,26 @@ while(contador<longitud)
 }
 
 export function obtenerMejorJugador(jugadores: number[], caracteristica: string): number {
-  let mejorId: number = -1; // COMPLETAR
+  let mejorId: number = -1;
+  let longitud: number= roster.length
+  let contador: number = 0
+  let n: number=0
+  let mejor: number=0
+
+while(contador<longitud)
+
+if (caracteristica===obtenerDato(jugadores[n], 'pts') )
+
+
+  if (caracteristica===obtenerDato(jugadores[n], 'rbs') )
+
+
+    if (caracteristica===obtenerDato(jugadores[n], 'ast') )
+
+
+
+  n++
+  contador++
   return mejorId;
 }
 
